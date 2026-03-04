@@ -4,13 +4,13 @@
 
 ![PurrCast Logo](https://raw.githubusercontent.com/EugenioPetulla/PurrCast_Podcast_Finder/main/logo.png)
 
-Search for public podcast shows and episodes using Spreaker (iHeart) from The Cheshire Cat.
+Search for public podcast shows and episodes using Spreaker (iHeart) from The Grinning Cat.
 
 Who knew cats could be such expert DJs? It's time to sit back, relax, and let this feline maestro guide your ears to audio delight! 🎙️🐈
 
 Are you also a huge podcast enthusiast like me, constantly on the lookout for something new and intriguing to listen to?
 
-Starting today, all you need to do is ask the Cheshire Cat to find some shows on your behalf, simply by providing him with the topic to search for!
+Starting today, all you need to do is ask the Grinning Cat to find some shows on your behalf, simply by providing him with the topic to search for!
 
 Let's find your purrfect podcast experience!   
 

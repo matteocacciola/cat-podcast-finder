@@ -1,4 +1,4 @@
-from cat.mad_hatter.decorators import tool
+from cat import tool
 import requests
 
 
