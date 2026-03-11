@@ -12,8 +12,7 @@ def get_author_info(author_id):
     if response.status_code == 200:
         author_info = response.json()["response"]["user"]
         return author_info
-    else:
-        return None
+    return None
 
 
 @tool
@@ -43,8 +42,7 @@ def search_shows(query, cat):
             author_name = author_info["fullname"] if author_info else "Unknown Author"
             shows_info.append(f"Show Name: {show['title']} by {author_name}\nLink: {show['site_url']}")
         return "\n".join(shows_info)
-    else:
-        return f"Error: {response.status_code}"
+    return f"Error: {response.status_code}"
 
 
 @tool
@@ -77,5 +75,4 @@ def search_episodes(query, cat):
             episodes_info.append(
                 f"Show Title: {show_title}\nEpisode Title: {episode_title} by {author_name}\nLink: {episode['site_url']}")
         return "\n".join(episodes_info)
-    else:
-        return f"Error: {response.status_code}"
+    return f"Error: {response.status_code}"
