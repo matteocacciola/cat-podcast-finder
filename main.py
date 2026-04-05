@@ -16,7 +16,7 @@ def get_author_info(author_id):
 
 
 @tool
-def search_shows(query, cat):
+async def search_shows(query, cat):
     """
     Search for a podcast (a show). The input is a query.
 
@@ -24,7 +24,7 @@ def search_shows(query, cat):
     Query -> curious animals
     """
     endpoint = f"{SPREAKER_API_BASE_URL}/search"
-    settings = cat.mad_hatter.get_plugin().load_settings()
+    settings = await cat.mad_hatter.get_plugin().load_settings()
 
     params = {
         "type": "shows",
@@ -46,7 +46,7 @@ def search_shows(query, cat):
 
 
 @tool
-def search_episodes(query, cat):
+async def search_episodes(query, cat):
     """
     Search for a podcast episode. The input is a query.
 
@@ -54,7 +54,7 @@ def search_episodes(query, cat):
     Query -> alice in wonderland
     """
     endpoint = f"{SPREAKER_API_BASE_URL}/search"
-    settings = cat.mad_hatter.get_plugin().load_settings()
+    settings = await cat.mad_hatter.get_plugin().load_settings()
     
     params = {
         "type": "episodes",
